@@ -28,7 +28,7 @@
   src: url("assets/fonts/Oswald-Bold.ttf");
 }
 
-@media (min-width: 1366px) {
+@media only screen and (min-width: 700px) {
   .App {
     border-radius: 10px;
   }
@@ -64,7 +64,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 600px) {
   .App {
     border-radius: 10px;
   }
