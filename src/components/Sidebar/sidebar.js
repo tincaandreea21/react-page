@@ -23,7 +23,7 @@ const Sidebar = (props) => {
           <NavLink
             exact="true"
             activeclassname="active"
-            to="/react-page"
+            to="/react-page/home"
             className="navigation-link"
           >
             Home
