@@ -23,7 +23,7 @@ const Sidebar = (props) => {
           <NavLink
             exact="true"
             activeclassname="active"
-            to="/"
+            to="/react-page"
             className="navigation-link"
           >
             Home
@@ -33,7 +33,7 @@ const Sidebar = (props) => {
           <NavLink
             exact="true"
             activeclassname="active"
-            to="/about"
+            to="/react-page/about"
             className="navigation-link"
           >
             About
@@ -43,7 +43,7 @@ const Sidebar = (props) => {
           <NavLink
             exact="true"
             activeclassname="active"
-            to="/projects"
+            to="/react-page/projects"
             className="navigation-link"
           >
             Projects
@@ -53,7 +53,7 @@ const Sidebar = (props) => {
           <NavLink
             exact="true"
             activeclassname="active"
-            to="/contact"
+            to="/react-page/contact"
             className="navigation-link"
           >
             Contact
