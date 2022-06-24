@@ -1,0 +1,174 @@
+@media (min-width: 800px) {
+  * {
+    letter-spacing: 1.1px;
+  }
+  .div-home {
+    height: 100vh;
+    display: flex;
+    background-image: url("../../assets/img/bk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-family: "Oswald-Light";
+    font-size: 50px;
+  }
+  main p {
+    font-family: "Oswald-Regular";
+    font-size: 40px;
+  }
+  .main-div-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  span {
+    position: absolute;
+    z-index: 1;
+    font-family: "Oswald-Regular";
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 20px;
+  }
+  .highlight {
+    position: relative;
+  }
+
+  .highlight::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transform: scale(1.07, 1.05) skewX(-15deg);
+    background-image: linear-gradient(to top left, #ccdadd, #50858f);
+  }
+  .btn-cv {
+    background: transparent;
+    border: 2px solid rgb(42 117 135);
+    border-radius: 25px;
+    width: fit-content;
+  }
+
+  .btn-cv a {
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald-Regular";
+    font-size: 20px;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+  }
+  .btn-cv a:hover {
+    padding: 10px;
+    text-decoration: underline;
+    color: rgb(42 117 135);
+  }
+  .file-logo {
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  * {
+    letter-spacing: 0.9px;
+  }
+  .div-home {
+    display: flex;
+    flex-direction: column;
+  }
+  .div-home::before {
+    content: "";
+    position: absolute;
+    width: 196%;
+    height: 149%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background-image: url("../../assets/img/bk.png");
+    background-size: cover;
+    transform: rotate(90deg);
+  }
+  main {
+    align-content: start;
+    display: flex;
+    margin: 20px;
+  }
+  h1 {
+    font-family: "Oswald-Light";
+    font-size: 20px;
+  }
+  main p {
+    font-family: "Oswald-Regular";
+    font-size: 19px;
+    padding-left: 0px;
+  }
+  .main-div-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  span {
+    position: absolute;
+    z-index: 1;
+    font-family: "Oswald-Regular";
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .highlight {
+    position: relative;
+  }
+
+  .highlight::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transform: scale(1.07, 1.05) skewX(-15deg);
+    background-image: linear-gradient(to top left, #ccdadd, #50858f);
+  }
+  .btn-cv {
+    background: transparent;
+    border: 2px solid rgb(42 117 135);
+    border-radius: 22px;
+    width: fit-content;
+  }
+
+  .btn-cv a {
+    display: flex;
+    justify-content: center;
+
+    font-family: "Oswald-Regular";
+    font-size: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  .btn-cv a:hover {
+    padding: 10px;
+    text-decoration: underline;
+    color: rgb(42 117 135);
+  }
+  .file-logo {
+    padding: 3px;
+    width: 9px;
+    height: 9px;
+  }
+}
