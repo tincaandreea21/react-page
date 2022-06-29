@@ -136,7 +136,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   * {
     letter-spacing: 0.9px;
   }
@@ -177,6 +177,8 @@
     padding: 4%;
     box-shadow: 0px 0px 10px 3px #88888836;
     border-radius: 10px;
+    width: 250px;
+    height: 150px;
   }
   .container-img {
     position: relative;
@@ -192,6 +194,12 @@
     width: 50px;
     height: 50px;
     border-radius: 10px;
+  }
+  .container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
   }
 
   .overlay {
@@ -211,16 +219,7 @@
     opacity: 0.8;
   }
   .overlay-text {
-    text-decoration: none;
-    font-family: "Oswald-Regular";
-    color: #1b2733;
-    font-size: 8px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    visibility: hidden;
   }
   .title-p {
     font-family: "Oswald-Regular";
@@ -235,7 +234,14 @@
     justify-content: center;
     text-align: center;
   }
+  .text-paragraph {
+    font-family: "Oswald-Light";
+    font-size: 10px;
+    justify-content: center;
+    text-align: center;
+  }
   .container-item ul {
+    padding: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -256,20 +262,16 @@
   }
   .dot {
     margin: 1.5rem;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: black;
     opacity: 0.7;
   }
-  .dot:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
   .dot-active {
     box-sizing: border-box;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: 1px solid black;
     background-color: white;
