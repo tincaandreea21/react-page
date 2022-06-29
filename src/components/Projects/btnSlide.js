@@ -1,12 +1,9 @@
 import React from "react";
 import "./btnSlide.css";
-// import arrowLeft from "../../assets/img/arrow-left.svg";
-// import arrowRight from "../../assets/img/arrow-right.svg";
 import arrowLeft from "../../assets/img/arrow-left-solid.svg";
 import arrowRight from "../../assets/img/arrow-right-solid.svg";
 
 const BtnSlider = ({ direction, moveSlide }) => {
-  console.log(direction, moveSlide);
   return (
     <button
       onClick={moveSlide}

@@ -7,7 +7,6 @@ import layout from "../../assets/img/layout-img.png";
 import BtnSlider from "./btnSlide";
 
 const Projects = (props) => {
-  const { title } = props;
   const slides = [
     {
       src: rps,
